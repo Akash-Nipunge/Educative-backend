@@ -26,6 +26,7 @@ export const login = asyncHandler(async (req, res) => {
       );
       res.json({
         success: true,
+        role : user.role,
         message: "User logged In successfully!",
         token,
       });
