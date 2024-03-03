@@ -23,6 +23,9 @@ export const login = asyncHandler(async (req, res) => {
       );
       res.status(200).send({
         success: true,
+        firstName:user.firstName,
+        middleName:user.middleName,
+        lastName:user.lastName,
         message: "Logged in successfull!",
         token: token,
       });
